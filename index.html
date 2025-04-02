@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douae Bakkali | Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- IDE Style Header -->
+    <header class="ide-header">
+        <div class="ide-menu">
+            <span class="menu-item active">DouaeBakkali.java</span>
+            <span class="menu-item">Experience.js</span>
+            <span class="menu-item">Projects.config</span>
+            <span class="menu-item">Skills.yml</span>
+        </div>
+        <div class="ide-controls">
+            <span class="control-btn close"></span>
+            <span class="control-btn minimize"></span>
+            <span class="control-btn maximize"></span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar - Like IDE Project Explorer -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="assets/images/profile.jpg" alt="Douae Bakkali">
+                </div>
+                <div class="profile-info">
+                    <h1>Douae Bakkali</h1>
+                    <p class="title">Software Engineer</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Rabat, Morocco</p>
+                </div>
+                <div class="profile-links">
+                    <a href="#" class="link-btn email"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="#" class="link-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" class="link-btn github"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-section">
+                    <h3><i class="fas fa-folder-open"></i> Navigation</h3>
+                    <ul>
+                        <li class="active"><i class="fas fa-user"></i> About</li>
+                        <li><i class="fas fa-briefcase"></i> Experience</li>
+                        <li><i class="fas fa-project-diagram"></i> Projects</li>
+                        <li><i class="fas fa-code"></i> Skills</li>
+                        <li><i class="fas fa-graduation-cap"></i> Education</li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <h3><i class="fas fa-terminal"></i> DevOps Tools</h3>
+                    <div class="devops-tags">
+                        <span class="devops-tag docker"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="devops-tag git"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="devops-tag jenkins"><i class="fab fa-jenkins"></i> Jenkins</span>
+                        <span class="devops-tag aws"><i class="fab fa-aws"></i> AWS</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- About Section -->
+            <section id="about" class="section active">
+                <div class="section-header">
+                    <h2><span class="keyword">public class</span> <span class="class-name">DouaeBakkali</span> <span class="punctuation">{</span></h2>
+                </div>
+                
+                <div class="about-content">
+                    <div class="code-block">
+                        <div class="code-line"><span class="keyword">private final</span> <span class="type">String</span> bio <span class="operator">=</span> <span class="string">"Software Engineering student at ENSIAS with hands-on experience in full-stack development (Spring Boot, React.js) and a passion for building scalable solutions."</span><span class="punctuation">;</span></div>
+                        <div class="code-line"><span class="keyword">private</span> <span class="type">String</span>[] interests <span class="operator">=</span> <span class="punctuation">{</span><span class="string">"Java Development"</span><span class="punctuation">,</span> <span class="string">"DevOps"</span><span class="punctuation">,</span> <span class="string">"System Design"</span><span class="punctuation">}</span><span class="punctuation">;</span></div>
+                    </div>
+                    
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control-btn close"></span>
+                                <span class="control-btn minimize"></span>
+                                <span class="control-btn maximize"></span>
+                            </div>
+                            <span class="terminal-title">bash ~/about_me.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="command-line"><span class="prompt">douae@portfolio:~$</span> cat hobbies.txt</p>
+                            <div class="command-output">
+                                <p>Volleyball</p>
+                                <p>Decoration</p>
+                                <p>Reading</p>
+                                <p>Traveling</p>
+                            </div>
+                            <p class="command-line"><span class="prompt">douae@portfolio:~$</span> <span class="cursor">_</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <span class="punctuation">}</span>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <div class="section-header">
+                    <h2><span class="keyword">public interface</span> <span class="class-name">ProfessionalExperience</span> <span class="punctuation">{</span></h2>
+                </div>
+                
+                <div class="experience-cards">
+                    <!-- Experience Card 1 -->
+                    <div class="experience-card">
+                        <div class="card-header">
+                            <h3><span class="keyword">public void</span> <span class="method-name">wilayaInternship</span><span class="punctuation">()</span> <span class="punctuation">{</span></h3>
+                            <div class="job-meta">
+                                <span class="company">Wilaya of Tanger-Tetouan-Al Hoceima</span>
+                                <span class="date">Jul 2024</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="code-comment">/** Web Development Intern */</div>
+                            <ul class="responsibilities">
+                                <li>Developed web app for IT inventory management</li>
+                                <li>SpringBoot Backend + ReactJS Frontend</li>
+                                <li>MySQL Database integration</li>
+                                <li>UML design and documentation</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag java">Java</span>
+                            <span class="tech-tag spring">Spring Boot</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag mysql">MySQL</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="punctuation">}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <span class="punctuation">}</span>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h2><span class="keyword">public abstract class</span> <span class="class-name">AcademicProjects</span> <span class="punctuation">{</span></h2>
+                </div>
+                
+                <div class="project-cards">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Internship Management System</h3>
+                            <div class="project-meta">
+                                <span class="date">2024</span>
+                                <span class="team-size">Team of 4</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Web platform to streamline internship processes for students, companies, and universities.</p>
+                            <div class="features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Dashboard interfaces for different user roles</li>
+                                    <li>Internship lifecycle management</li>
+                                    <li>Application tracking system</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag java">Java</span>
+                            <span class="tech-tag spring">Spring Boot</span>
+                            <span class="tech-tag react">Next.js</span>
+                            <span class="tech-tag oracle">Oracle</span>
+                            <span class="tech-tag docker">Docker</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Training Management Web App</h3>
+                            <div class="project-meta">
+                                <span class="date">2024</span>
+                                <span class="team-size">Team of 3</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Web application for managing training sessions, participants, and trainers.</p>
+                            <div class="features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Session scheduling system</li>
+                                    <li>Participant registration</li>
+                                    <li>Trainer management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag java">Java</span>
+                            <span class="tech-tag spring">Spring Boot</span>
+                            <span class="tech-tag html">HTML/CSS/JS</span>
+                            <span class="tech-tag mysql">MySQL</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <span class="punctuation">}</span>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <div class="section-header">
+                    <h2><span class="keyword">public enum</span> <span class="class-name">TechnicalSkills</span> <span class="punctuation">{</span></h2>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><span class="annotation">@BackEnd</span></h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon java-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-name">Java</div>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon spring-icon">
+                                    <img src="assets/images/spring-icon.png" alt="Spring">
+                                </div>
+                                <div class="skill-name">Spring Boot</div>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <!-- More skills... -->
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><span class="annotation">@DevOps</span></h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon docker-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="skill-name">Docker</div>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon git-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <div class="skill-name">Git</div>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <!-- More skills... -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <span class="punctuation">}</span>
+                </div>
+            </section>
+            <section id="education" class="section">
+                <div class="section-header">
+                    <h2><span class="keyword">public class</span> <span class="class-name">Education</span> <span class="punctuation">{</span></h2>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Current Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023-2025</div>
+                        <div class="timeline-content">
+                            <h3>ENSIAS, Rabat</h3>
+                            <p>2nd Year of Engineering Cycle, Software Engineering Major</p>
+                        </div>
+                    </div>
+                    
+                    <!-- CPGE -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021-2023</div>
+                        <div class="timeline-content">
+                            <h3>CPGE Moulay El Hassan, Tangier</h3>
+                            <p>Preparatory Classes for Engineering Schools, Mathematics and Physics Option</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Baccalaureate -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020-2021</div>
+                        <div class="timeline-content">
+                            <h3>Lycee Technique Moulay Youssef, Tangier</h3>
+                            <p>Baccalaureate, Mathematical Sciences B, Honors</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <span class="punctuation">}</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
