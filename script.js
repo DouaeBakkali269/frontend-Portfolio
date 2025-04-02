@@ -233,3 +233,12 @@ document.addEventListener('DOMContentLoaded', function() {
     techTags.forEach(tag => { /* ... */ });
 
 }); // End DOMContentLoaded
+
+
+document.querySelector('.cv-download-btn').addEventListener('click', function(e) {
+    // If download fails, open in new tab as fallback
+    if(!this.hasAttribute('download') || !this.getAttribute('download')) {
+        e.preventDefault();
+        window.open(this.href, '_blank');
+    }
+});
