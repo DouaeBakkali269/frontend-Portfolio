@@ -38,9 +38,15 @@
                     <p class="location"><i class="fas fa-map-marker-alt"></i> Rabat, Morocco</p>
                 </div>
                 <div class="profile-links">
-                    <a href="#" class="link-btn email"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="#" class="link-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="#" class="link-btn github"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="mailto:bakkalidouae75@gmail.com" class="link-btn email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/douae-bakkali/" target="_blank" class="link-btn linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/DouaeBakkali269/" target="_blank" class="link-btn github">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
 
@@ -48,65 +54,83 @@
                 <div class="menu-section">
                     <h3><i class="fas fa-folder-open"></i> Navigation</h3>
                     <ul>
-                        <li class="active"><i class="fas fa-user"></i> About</li>
-                        <li><i class="fas fa-briefcase"></i> Experience</li>
-                        <li><i class="fas fa-project-diagram"></i> Projects</li>
-                        <li><i class="fas fa-code"></i> Skills</li>
-                        <li><i class="fas fa-graduation-cap"></i> Education</li>
+                        <li class="active" data-section="about"><i class="fas fa-user"></i> About</li>
+                        <li data-section="experience"><i class="fas fa-briefcase"></i> Experience</li>
+                        <li data-section="projects"><i class="fas fa-project-diagram"></i> Projects</li>
+                        <li data-section="skills"><i class="fas fa-code"></i> Skills</li>
+                        <li data-section="education"><i class="fas fa-graduation-cap"></i> Education</li>
                     </ul>
-                </div>
-                <div class="menu-section">
-                    <h3><i class="fas fa-terminal"></i> DevOps Tools</h3>
-                    <div class="devops-tags">
-                        <span class="devops-tag docker"><i class="fab fa-docker"></i> Docker</span>
-                        <span class="devops-tag git"><i class="fab fa-git-alt"></i> Git</span>
-                        <span class="devops-tag jenkins"><i class="fab fa-jenkins"></i> Jenkins</span>
-                        <span class="devops-tag aws"><i class="fab fa-aws"></i> AWS</span>
-                    </div>
                 </div>
             </div>
         </aside>
 
         <!-- Main Content -->
         <main class="content">
-            <!-- About Section -->
-            <section id="about" class="section active">
-                <div class="section-header">
-                    <h2><span class="keyword">public class</span> <span class="class-name">DouaeBakkali</span> <span class="punctuation">{</span></h2>
-                </div>
-                
-                <div class="about-content">
-                    <div class="code-block">
-                        <div class="code-line"><span class="keyword">private final</span> <span class="type">String</span> bio <span class="operator">=</span> <span class="string">"Software Engineering student at ENSIAS with hands-on experience in full-stack development (Spring Boot, React.js) and a passion for building scalable solutions."</span><span class="punctuation">;</span></div>
-                        <div class="code-line"><span class="keyword">private</span> <span class="type">String</span>[] interests <span class="operator">=</span> <span class="punctuation">{</span><span class="string">"Java Development"</span><span class="punctuation">,</span> <span class="string">"DevOps"</span><span class="punctuation">,</span> <span class="string">"System Design"</span><span class="punctuation">}</span><span class="punctuation">;</span></div>
-                    </div>
-                    
-                    <div class="terminal-window">
-                        <div class="terminal-header">
-                            <div class="terminal-controls">
-                                <span class="control-btn close"></span>
-                                <span class="control-btn minimize"></span>
-                                <span class="control-btn maximize"></span>
-                            </div>
-                            <span class="terminal-title">bash ~/about_me.sh</span>
-                        </div>
-                        <div class="terminal-body">
-                            <p class="command-line"><span class="prompt">douae@portfolio:~$</span> cat hobbies.txt</p>
-                            <div class="command-output">
-                                <p>Volleyball</p>
-                                <p>Decoration</p>
-                                <p>Reading</p>
-                                <p>Traveling</p>
-                            </div>
-                            <p class="command-line"><span class="prompt">douae@portfolio:~$</span> <span class="cursor">_</span></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="section-footer">
-                    <span class="punctuation">}</span>
-                </div>
-            </section>
+          <!-- About Section (Split View) -->
+<section id="about" class="section active">
+        <!-- ADD THIS TITLE -->
+        <h3 class="about-section-title"> About Me !</h3>
+        <!-- END TITLE -->
+    <!-- Wrapper for the two side-by-side cards -->
+    <div class="about-content-split">
+
+        <!-- Card 1: The Code Block -->
+        <div class="about-code-card">
+            <div class="card-header about-code-header">
+                <i class="fab fa-java" style="color: var(--java-color); margin-right: 5px;"></i> DouaeBakkali.java
+            </div>
+            <div class="about-code-content">
+                <pre><code class="language-java">
+ <span class="comment">/**
+  * Software Engineering student at ENSIAS with a passion for
+  * building robust and scalable applications. Eager to leverage
+  * skills in Java, Spring Boot, React, and DevOps practices
+  * to contribute to innovative projects. 
+  */</span>
+
+ <span class="keyword">private final</span> <span class="type">String</span> <span class="variable">fullName</span> <span class="operator">=</span> <span class="string">"Douae Bakkali"</span><span class="punctuation">;</span>
+ <span class="keyword">private final</span> <span class="type">String</span> <span class="variable">currentRole</span> <span class="operator">=</span> <span class="string">"Software Engineering Student"</span><span class="punctuation">;</span>
+ <span class="keyword">private final</span> <span class="type">String</span> <span class="variable">location</span> <span class="operator">=</span> <span class="string">"Rabat, Morocco"</span><span class="punctuation">;</span>
+
+ <span class="keyword">private final</span> <span class="type">String</span><span class="punctuation">[]</span> <span class="variable">keySkills</span> <span class="operator">=</span> <span class="punctuation">{</span>
+   <span class="string">"Java"</span><span class="punctuation">,</span> <span class="string">"Spring Boot"</span><span class="punctuation">,</span> <span class="string">"Python"</span><span class="punctuation">,</span>
+   <span class="string">"React.js"</span><span class="punctuation">,</span> <span class="string">"Next.js"</span><span class="punctuation">,</span> <span class="string">"JavaScript"</span><span class="punctuation">,</span>
+   <span class="string">"SQL (MySQL, Oracle)"</span><span class="punctuation">,</span> <span class="string">"Git"</span><span class="punctuation">,</span>
+   <span class="string">"Docker"</span><span class="punctuation">,</span> <span class="string">"CI/CD Concepts"</span><span class="punctuation">,</span> <span class="string">"Jenkins"</span><span class="punctuation">,</span> <span class="string">"Maven"</span>
+ <span class="punctuation">};</span>
+
+
+ <span class="comment">// Connect via sidebar links!</span>
+                </code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2: The Terminal Animation -->
+        <div class="about-terminal-card">
+            <!-- Re-using original terminal structure & classes -->
+            <div class="terminal-window">
+                 <div class="terminal-header">
+                     <div class="terminal-controls">
+                         <span class="control-btn close"></span>
+                         <span class="control-btn minimize"></span>
+                         <span class="control-btn maximize"></span>
+                     </div>
+                     <span class="terminal-title">bash ~ % info_terminal</span>
+                 </div>
+                 <div class="terminal-body">
+                     <!-- Initial command line for JS animation -->
+                     <p class="command-line">
+                         <span class="prompt">douae@portfolio:~$</span> <span class="cursor">_</span>
+                     </p>
+                 </div>
+             </div>
+        </div>
+
+    </div> <!-- End about-content-split -->
+
+
+</section>
+<!-- End About Section -->
 
             <!-- Experience Section -->
             <section id="experience" class="section">
@@ -230,60 +254,339 @@
                 </div>
             </section>
 
-            <!-- Skills Section -->
-            <section id="skills" class="section">
+                     <!-- Skills Section -->
+                     <section id="skills" class="section">
+                        <div class="section-header">
+                            <h2><span class="keyword">public enum</span> <span class="class-name">TechnicalSkills</span> <span class="punctuation">{</span></h2>
+                        </div>
+        
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h3><span class="annotation">@BackEnd</span></h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <!-- Added java-icon class -->
+                                        <div class="skill-icon java-icon">
+                                            <i class="fab fa-java"></i>
+                                        </div>
+                                        <div class="skill-name">Java</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Kept spring-icon class -->
+                                        <div class="skill-icon spring-icon">
+                                            <img src="assets/images/spring-icon.png" alt="Spring">
+                                        </div>
+                                        <div class="skill-name">Spring Boot</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added python-icon class -->
+                                        <div class="skill-icon python-icon">
+                                            <i class="fab fa-python"></i>
+                                        </div>
+                                        <div class="skill-name">Python</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added node-icon class -->
+                                        <div class="skill-icon node-icon">
+                                            <i class="fab fa-node-js"></i>
+                                        </div>
+                                        <div class="skill-name">Node.js</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="skill-category">
+                                <h3><span class="annotation">@FrontEnd</span></h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <!-- Kept react-icon class -->
+                                        <div class="skill-icon react-icon">
+                                            <i class="fab fa-react"></i>
+                                        </div>
+                                        <div class="skill-name">React.js</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added nextjs-icon class (using generic fa-js for styling) -->
+                                        <div class="skill-icon nextjs-icon">
+                                            <i class="fab fa-js"></i> <!-- Using JS icon, you might want a specific Next.js SVG/image -->
+                                        </div>
+                                        <div class="skill-name">Next.js</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added html-icon class -->
+                                        <div class="skill-icon html-icon">
+                                            <i class="fab fa-html5"></i>
+                                        </div>
+                                        <div class="skill-name">HTML/CSS</div> <!-- Combined, could split if needed -->
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added js-icon class -->
+                                        <div class="skill-icon js-icon">
+                                            <i class="fab fa-js-square"></i>
+                                        </div>
+                                        <div class="skill-name">JavaScript</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Kept material-ui-icon class, changed icon -->
+                                        <div class="skill-icon material-ui-icon">
+                                            <i class="fas fa-cubes"></i> <!-- Changed from fa-mui to a valid icon -->
+                                        </div>
+                                        <div class="skill-name">Material-UI</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="skill-category">
+                                <h3><span class="annotation">@DevOps</span></h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <!-- Kept docker-icon class -->
+                                        <div class="skill-icon docker-icon">
+                                            <i class="fab fa-docker"></i>
+                                        </div>
+                                        <div class="skill-name">Docker</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Kept git-icon class -->
+                                        <div class="skill-icon git-icon">
+                                            <i class="fab fa-git-alt"></i>
+                                        </div>
+                                        <div class="skill-name">Git</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added cicd-icon class -->
+                                        <div class="skill-icon cicd-icon">
+                                            <i class="fas fa-code-branch"></i>
+                                        </div>
+                                        <div class="skill-name">CI/CD</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added maven-icon class -->
+                                        <div class="skill-icon maven-icon">
+                                            <i class="fas fa-server"></i> <!-- Using generic server icon -->
+                                        </div>
+                                        <div class="skill-name">Maven</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added linux-icon class -->
+                                        <div class="skill-icon linux-icon">
+                                            <i class="fab fa-linux"></i>
+                                        </div>
+                                        <div class="skill-name">Linux</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added jenkins-icon class -->
+                                        <div class="skill-icon jenkins-icon">
+                                            <i class="fab fa-jenkins"></i>
+                                        </div>
+                                        <div class="skill-name">Jenkins</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added ansible-icon class -->
+                                        <div class="skill-icon ansible-icon">
+                                            <i class="fas fa-tools"></i> <!-- Using generic tools icon -->
+                                        </div>
+                                        <div class="skill-name">Ansible</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="skill-category">
+                                <h3><span class="annotation">@Databases</span></h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <!-- Added mysql-icon class -->
+                                        <div class="skill-icon mysql-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="skill-name">MySQL</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added oracle-icon class -->
+                                        <div class="skill-icon oracle-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="skill-name">Oracle</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added postgresql-icon class -->
+                                        <div class="skill-icon postgresql-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="skill-name">PostgreSQL</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <!-- Added sqlserver-icon class -->
+                                        <div class="skill-icon sqlserver-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="skill-name">SQL Server</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="section-footer">
+                            <span class="punctuation">}</span>
+                        </div>
+
+                        <div class="section-header">
+                            <h2><span class="keyword">public enum</span> <span class="class-name">Languages</span> <span class="punctuation">{</span></h2>
+                        </div>
+            
+                        <div class="languages-container">
+                            <div class="language-item">
+                                <div class="language-name">ARABIC</div>
+                                <div class="language-proficiency">
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-level-text">Native</span>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-name">FRENCH</div>
+                                <div class="language-proficiency">
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot"></span>
+                                     <span class="proficiency-level-text">Fluent (C1)</span>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-name">ENGLISH</div>
+                                <div class="language-proficiency">
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot"></span>
+                                     <span class="proficiency-level-text">Advanced (C1)</span>
+                                </div>
+                            </div>
+                             <div class="language-item">
+                                <div class="language-name">SPANISH</div>
+                                <div class="language-proficiency">
+                                    <span class="proficiency-dot filled"></span>
+                                    <span class="proficiency-dot "></span>
+                                    <span class="proficiency-dot"></span>
+                                    <span class="proficiency-dot"></span>
+                                    <span class="proficiency-dot"></span>
+                                    <span class="proficiency-level-text">Beginner (A2)</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="section-footer">
+                            <span class="punctuation">}</span>
+                        </div>
+                    </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
                 <div class="section-header">
-                    <h2><span class="keyword">public enum</span> <span class="class-name">TechnicalSkills</span> <span class="punctuation">{</span></h2>
+                    <h2><span class="keyword">public class</span> <span class="class-name">Education</span> <span class="punctuation">{</span></h2>
                 </div>
                 
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3><span class="annotation">@BackEnd</span></h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-icon java-icon">
-                                    <i class="fab fa-java"></i>
-                                </div>
-                                <div class="skill-name">Java</div>
-                                <div class="skill-level">
-                                    <div class="level-bar" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon spring-icon">
-                                    <img src="assets/images/spring-icon.png" alt="Spring">
-                                </div>
-                                <div class="skill-name">Spring Boot</div>
-                                <div class="skill-level">
-                                    <div class="level-bar" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <!-- More skills... -->
+                <div class="education-cards">
+                    <!-- Current Education -->
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>ENSIAS, Rabat</h3>
+                            <div class="edu-date">2023-2025</div>
+                            <p>2nd Year of Engineering Cycle, Software Engineering Major</p>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <h3><span class="annotation">@DevOps</span></h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-icon docker-icon">
-                                    <i class="fab fa-docker"></i>
-                                </div>
-                                <div class="skill-name">Docker</div>
-                                <div class="skill-level">
-                                    <div class="level-bar" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon git-icon">
-                                    <i class="fab fa-git-alt"></i>
-                                </div>
-                                <div class="skill-name">Git</div>
-                                <div class="skill-level">
-                                    <div class="level-bar" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <!-- More skills... -->
+                    <!-- CPGE -->
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>CPGE Moulay El Hassan, Tangier</h3>
+                            <div class="edu-date">2021-2023</div>
+                            <p>Preparatory Classes for Engineering Schools, Mathematics and Physics Option</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Baccalaureate -->
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>Lycee Technique Moulay Youssef, Tangier</h3>
+                            <div class="edu-date">2020-2021</div>
+                            <p>Baccalaureate, Mathematical Sciences B, Honors</p>
                         </div>
                     </div>
                 </div>
@@ -292,36 +595,38 @@
                     <span class="punctuation">}</span>
                 </div>
             </section>
-            <section id="education" class="section">
+
+
+            </section>
+            <section id="activities" class="section">
                 <div class="section-header">
-                    <h2><span class="keyword">public class</span> <span class="class-name">Education</span> <span class="punctuation">{</span></h2>
+                    <h2><span class="keyword">public interface</span> <span class="class-name">VolunteerActivities</span> <span class="punctuation">{</span></h2>
                 </div>
                 
-                <div class="timeline">
-                    <!-- Current Education -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">2023-2025</div>
-                        <div class="timeline-content">
-                            <h3>ENSIAS, Rabat</h3>
-                            <p>2nd Year of Engineering Cycle, Software Engineering Major</p>
+                <div class="activity-cards">
+                    <!-- IEEE -->
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h3>IEEE ENSIAS Events Lead</h3>
+                            <p>Organized major tech events and conferences, moderated panel discussions and managed logistics and speaker coordination.</p>
+                            <div class="activity-skills">
+                                <span>Project Management</span>
+                                <span>Public Speaking</span>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- CPGE -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">2021-2023</div>
-                        <div class="timeline-content">
-                            <h3>CPGE Moulay El Hassan, Tangier</h3>
-                            <p>Preparatory Classes for Engineering Schools, Mathematics and Physics Option</p>
+                    <!-- Forum Geni -->
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <i class="fas fa-handshake"></i>
                         </div>
-                    </div>
-                    
-                    <!-- Baccalaureate -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">2020-2021</div>
-                        <div class="timeline-content">
-                            <h3>Lycee Technique Moulay Youssef, Tangier</h3>
-                            <p>Baccalaureate, Mathematical Sciences B, Honors</p>
+                        <div class="activity-content">
+                            <h3>Forum Geni Sponsorship Team</h3>
+                            <p>Secured sponsorships for annual career forum and organized student-professional networking events.</p>
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,11 @@
     --react-color: #61dafb;
     --docker-color: #2496ed;
     --git-color: #f05032;
+    --python-color: #3572a5;
+    --node-color: #68a063;
+    --html-color: #e34f26;
+    --css-color: #2965f1;
+    --js-color: #f7df1e;
 }
 
 body {
@@ -320,19 +325,32 @@ body {
     margin-bottom: 30px;
 }
 
-.code-block {
+.dockerfile-card {
     flex: 1;
     background-color: var(--card-bg);
-    padding: 20px;
     border-radius: 6px;
+    overflow: hidden;
     box-shadow: var(--card-shadow);
-    border-left: 4px solid var(--ide-accent);
+    border-left: 4px solid var(--docker-color);
 }
 
-.code-line {
-    margin-bottom: 8px;
+.dockerfile-header {
+    background-color: rgba(36, 150, 237, 0.1);
+    padding: 10px 15px;
     font-family: 'Fira Code', monospace;
     font-size: 14px;
+    color: #9cdcfe;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.dockerfile-card pre code {
+    display: block;
+    padding: 15px;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d4d4d4;
+    overflow-x: auto;
 }
 
 .terminal-window {
@@ -376,6 +394,10 @@ body {
 }
 
 .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background: #0dbc79;
     animation: blink 1s infinite;
 }
 
@@ -386,7 +408,7 @@ body {
 
 .command-output {
     color: #cccccc;
-    margin: 10px 0 15px 15px;
+    margin: 5px 0 15px 15px;
 }
 
 .command-output p {
@@ -493,6 +515,21 @@ body {
 .tech-tag.oracle {
     background-color: rgba(240, 80, 50, 0.2);
     color: #f05032;
+}
+
+.tech-tag.html {
+    background-color: rgba(227, 79, 38, 0.2);
+    color: var(--html-color);
+}
+
+.tech-tag.python {
+    background-color: rgba(53, 114, 165, 0.2);
+    color: var(--python-color);
+}
+
+.tech-tag.node {
+    background-color: rgba(104, 160, 99, 0.2);
+    color: var(--node-color);
 }
 
 .card-footer {
@@ -645,6 +682,10 @@ body {
     color: var(--git-color);
 }
 
+.skill-icon.react-icon {
+    color: var(--react-color);
+}
+
 .skill-name {
     font-size: 14px;
     margin-bottom: 8px;
@@ -662,6 +703,45 @@ body {
 .level-bar {
     height: 100%;
     background-color: var(--ide-accent);
+}
+
+/* Education Section */
+.education-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-card {
+    display: flex;
+    gap: 20px;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: var(--card-shadow);
+    border-left: 4px solid var(--ide-accent);
+}
+
+.edu-icon {
+    font-size: 24px;
+    color: var(--ide-accent);
+    margin-top: 5px;
+}
+
+.edu-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.edu-date {
+    font-size: 14px;
+    color: var(--ide-comment);
+    margin-bottom: 10px;
+}
+
+.edu-content p {
+    margin: 0;
+    font-size: 14px;
 }
 
 /* Section Footer */
@@ -690,4 +770,300 @@ body {
     .skills-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
+    
+    .education-card {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
+
+
+.ansible-icon i {
+    color: #EE0000; /* Ansible red */
+}
+
+/* Kubernetes Icon */
+.skill-icon.kubernetes-icon {
+    color: #326CE5; /* Kubernetes blue */
+}
+
+/* Material-UI Icon */
+.skill-icon.material-ui-icon {
+    color: #0081CB; /* Material-UI blue */
+}
+
+/* --- Existing Skill Icon Styles (Keep these) --- */
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-icon.java-icon {
+    color: var(--java-color);
+}
+
+/* For Spring Boot Image - No color needed */
+.skill-icon.spring-icon img {
+    width: 24px; /* Adjusted size slightly */
+    height: 24px;
+}
+
+.skill-icon.docker-icon {
+    color: var(--docker-color);
+}
+
+.skill-icon.git-icon {
+    color: var(--git-color);
+}
+
+.skill-icon.react-icon {
+    color: var(--react-color);
+}
+
+/* --- NEW/CORRECTED Skill Icon Styles --- */
+
+/* Backend */
+.skill-icon.python-icon {
+    color: var(--python-color); /* Ensure --python-color is defined in :root */
+}
+.skill-icon.node-icon {
+    color: var(--node-color); /* Ensure --node-color is defined in :root */
+}
+
+/* Frontend */
+.skill-icon.nextjs-icon {
+     color: #ffffff; /* White for Next.js (often black/white logo) - adjust as needed */
+}
+.skill-icon.html-icon {
+    color: var(--html-color); /* Ensure --html-color is defined */
+}
+/* Note: HTML/CSS share an icon here, using HTML color. Add a separate CSS icon if desired */
+.skill-icon.css-icon { /* Add if you separate HTML/CSS */
+    color: var(--css-color); /* Ensure --css-color is defined */
+}
+.skill-icon.js-icon {
+    color: var(--js-color); /* Ensure --js-color is defined */
+}
+.skill-icon.material-ui-icon {
+    color: #0081CB; /* Material-UI blue */
+}
+
+/* DevOps */
+.skill-icon.cicd-icon {
+    color: #ffab00; /* A generic CI/CD color (e.g., amber) */
+}
+.skill-icon.maven-icon {
+    color: #c71a36; /* Maven reddish color */
+}
+.skill-icon.linux-icon {
+    color: #FCC624; /* Tux yellow */
+}
+.skill-icon.jenkins-icon {
+    color: #D24939; /* Jenkins red */
+}
+.skill-icon.ansible-icon { /* Corrected target */
+    color: #EE0000; /* Ansible red */
+}
+.skill-icon.kubernetes-icon {
+    color: #326CE5; /* Kubernetes blue */
+}
+
+
+/* Databases */
+.skill-icon.mysql-icon {
+    color: #4479A1; /* MySQL blue/grey */
+}
+.skill-icon.oracle-icon {
+    color: #F80000; /* Oracle red */
+}
+.skill-icon.postgresql-icon {
+    color: #336791; /* PostgreSQL blue */
+}
+.skill-icon.sqlserver-icon {
+    color: #CC2927; /* SQL Server red */
+}
+
+
+
+/* Languages Section */
+.language-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-proficiency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.proficiency-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.proficiency-dot.filled {
+    background-color: var(--ide-accent);
+}
+
+
+/* --- Styles for REDESIGNED About Section (Split View) --- */
+
+.about-content-split {
+    display: flex;
+    gap: 30px; /* Space between cards */
+    margin-top: 0px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+/* Common Card Styles */
+.about-code-card,
+.about-terminal-card {
+    flex: 1; /* Make cards share space */
+    min-width: 320px; /* Minimum width before wrapping */
+    background-color: var(--card-bg);
+    border-radius: 6px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden; /* Important for containing content */
+    display: flex; /* Use flex for internal card structure */
+    flex-direction: column; /* Stack header and content vertically */
+}
+
+/* Code Card Specific Styles */
+.about-code-card .card-header {
+    padding: 10px 15px;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    background-color: rgba(78, 201, 176, 0.1); /* Match --ide-class color slightly */
+    color: var(--ide-class);
+    border-bottom: 1px solid #3c3c3c;
+    display: flex;
+    align-items: center;
+}
+
+.about-code-card .about-code-content {
+    flex-grow: 1; /* Allow content to fill remaining space */
+    overflow: hidden; /* Needed for pre/code scrolling */
+}
+
+.about-code-card .about-code-content pre {
+    margin: 0;
+    padding: 15px;
+    background-color: transparent; /* Card bg is enough */
+    border: none; /* Card border is enough */
+    border-radius: 0; /* No radius needed inside */
+    overflow: auto; /* Allow scrolling */
+    height: 100%; /* Try to fill card height */
+    box-sizing: border-box; /* Include padding in height */
+}
+
+.about-code-card .about-code-content code {
+    font-family: 'Fira Code', monospace;
+    line-height: 1.7;
+    font-size: 14px;
+    display: block;
+    color: var(--ide-text);
+}
+
+/* Syntax Highlighting (Keep these from previous step) */
+.about-code-content .comment { color: var(--ide-comment); font-style: italic; }
+.about-code-content .keyword { color: var(--ide-keyword); }
+.about-code-content .type { color: var(--ide-class); }
+.about-code-content .variable { color: #9cdcfe; }
+.about-code-content .string { color: var(--ide-string); }
+.about-code-content .operator { color: var(--ide-punctuation); }
+.about-code-content .punctuation { color: var(--ide-punctuation); }
+.about-code-content .method-name { color: #dcdcaa; }
+
+
+/* Terminal Card Specific Styles (Re-instate/Adapt original terminal styles) */
+.about-terminal-card .terminal-window {
+    /* Remove background/border/shadow from here, card provides it */
+    border-radius: 0; /* Card has radius */
+    flex-grow: 1; /* Allow terminal to fill card height */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Fill the card */
+}
+
+.about-terminal-card .terminal-header {
+    background-color: #3c3c3c;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1e1e1e;
+    flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.about-terminal-card .terminal-controls { display: flex; gap: 8px; }
+.about-terminal-card .control-btn { /* Use existing styles */ }
+.about-terminal-card .terminal-title { font-size: 12px; color: #969696; }
+
+.about-terminal-card .terminal-body {
+    flex-grow: 1; /* Allow body to take remaining space */
+    padding: 15px;
+    font-family: 'Fira Code', monospace;
+    background-color: #0c0c0c; /* Dark terminal background */
+    color: #cccccc;
+    overflow-y: auto; /* IMPORTANT: Enable scrolling for animation output */
+    /* Set a specific height for the terminal body or rely on card flex */
+    min-height: 300px; /* Ensure a minimum height */
+     box-sizing: border-box;
+}
+/* Optional: Terminal scrollbar styling */
+.about-terminal-card .terminal-body::-webkit-scrollbar { width: 6px; }
+.about-terminal-card .terminal-body::-webkit-scrollbar-track { background: #2d2d2d; }
+.about-terminal-card .terminal-body::-webkit-scrollbar-thumb { background: #555; border-radius: 3px; }
+.about-terminal-card .terminal-body::-webkit-scrollbar-thumb:hover { background: #777; }
+
+
+.about-terminal-card .command-line {
+    margin: 0 0 5px 0;
+    min-height: 1.6em; /* Ensure line takes up space */
+    line-height: 1.6;
+}
+
+.about-terminal-card .prompt {
+    color: #0dbc79;
+    margin-right: 5px;
+}
+
+.about-terminal-card .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background: #0dbc79;
+    animation: blink 1s infinite;
+    margin-left: 1px;
+    vertical-align: bottom;
+}
+
+@keyframes blink { /* Ensure this exists */
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.about-terminal-card .command-output {
+    color: #cccccc;
+    margin: 5px 0 10px 10px; /* Indent output */
+    line-height: 1.5;
+}
+.about-terminal-card .command-output p {
+    margin: 3px 0;
+}
+
